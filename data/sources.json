@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Personal running-watch export",
+    "file": "exportSportData_466571768635605001_20260518.zip",
+    "use": "Training-log summaries only; raw GPS is not included in the public project data. The watch brand was COROS, but the visualisation is not about the brand."
+  },
+  {
+    "name": "Kaggle - The Big Dataset of Ultra-Marathon Running",
+    "file": "kaggle_*.csv",
+    "use": "Australian ultra-marathon results, aggregated to public summary files. No athlete names or individual race records are published."
+  },
+  {
+    "name": "AusPlay By Sport Data Tables",
+    "file": "C4S-AusPlay-By-Sport-Data-Tables-30-April-2026.xlsx",
+    "use": "Running/jogging participation rates, rankings and demographics."
+  },
+  {
+    "name": "AusPlay National Data Tables",
+    "file": "C4S-AusPlay-National-Data-Tables-30-April-2026.xlsx",
+    "use": "State/territory physical activity frequency for the required map."
+  },
+  {
+    "name": "ABS ASGS Edition 3 States and Territories 2021",
+    "file": "aus_states_territories_2021_simplified.geojson",
+    "use": "Simplified state/territory GeoJSON map boundaries."
+  }
+]

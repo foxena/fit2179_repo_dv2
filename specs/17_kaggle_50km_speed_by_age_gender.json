@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Australian 50 km field is age-shaped",
+    "subtitle": "Median speed by age band and gender, Australian 50 km results, 2015\u20132022"
+  },
+  "width": "container",
+  "height": 330,
+  "data": {
+    "url": "data/kaggle_aus_50km_speed_by_age_gender.csv"
+  },
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 80
+    },
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "age_band",
+      "type": "ordinal",
+      "title": "Age band",
+      "sort": [
+        "Under 30",
+        "30\u201339",
+        "40\u201349",
+        "50\u201359",
+        "60\u201369",
+        "70+",
+        "Unknown"
+      ]
+    },
+    "y": {
+      "field": "median_speed_kmh",
+      "type": "quantitative",
+      "title": "Median speed (km/h)",
+      "scale": {
+        "zero": false
+      }
+    },
+    "color": {
+      "field": "athlete_gender",
+      "type": "nominal",
+      "title": "Gender"
+    },
+    "tooltip": [
+      {
+        "field": "age_band",
+        "type": "ordinal",
+        "title": "Age band"
+      },
+      {
+        "field": "athlete_gender",
+        "type": "nominal",
+        "title": "Gender"
+      },
+      {
+        "field": "finishers",
+        "type": "quantitative",
+        "title": "Finishers",
+        "format": ","
+      },
+      {
+        "field": "median_speed_kmh",
+        "type": "quantitative",
+        "title": "Median speed (km/h)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {
+    "background": "#fffaf0",
+    "font": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "title": {
+      "fontSize": 17,
+      "anchor": "start",
+      "fontWeight": 700,
+      "color": "#1f2933",
+      "subtitleColor": "#52616b",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#334e5c",
+      "titleColor": "#334e5c",
+      "gridColor": "#e9dfd0",
+      "domainColor": "#b8aa99",
+      "tickColor": "#b8aa99"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "orient": "bottom",
+      "symbolSize": 120
+    },
+    "view": {
+      "stroke": null
+    },
+    "range": {
+      "category": [
+        "#d97706",
+        "#2563eb",
+        "#0f766e",
+        "#9f1239",
+        "#6d28d9",
+        "#475569",
+        "#0891b2"
+      ]
+    }
+  }
+}

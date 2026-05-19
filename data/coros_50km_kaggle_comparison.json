@@ -1,0 +1,15 @@
+[
+  {
+    "runner": "This 50 km training run",
+    "date": "2026-03-07",
+    "distance_km": 50.15,
+    "duration_min": 441.8,
+    "finish_time_hours": 7.36,
+    "average_speed_kmh": 6.81,
+    "pace_min_km": 8.81,
+    "speed_band_kmh": "6–7",
+    "finish_time_band": "7–8h",
+    "approx_speed_percentile": 45.2,
+    "comparison_note": "Approximate percentile calculated from grouped public 50 km speed bands, not individual race records."
+  }
+]

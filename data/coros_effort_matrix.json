@@ -1,0 +1,122 @@
+[
+  {
+    "distance_band":"<5 km",
+    "distance_band_order":0,
+    "effort_level":"Low",
+    "activities":14,
+    "distance_km":50.3,
+    "effort_level_order":0
+  },
+  {
+    "distance_band":"<5 km",
+    "distance_band_order":0,
+    "effort_level":"Moderate",
+    "activities":7,
+    "distance_km":26.9,
+    "effort_level_order":1
+  },
+  {
+    "distance_band":"<5 km",
+    "distance_band_order":0,
+    "effort_level":"Hard",
+    "activities":1,
+    "distance_km":4.3,
+    "effort_level_order":2
+  },
+  {
+    "distance_band":"5\u201310 km",
+    "distance_band_order":1,
+    "effort_level":"Low",
+    "activities":19,
+    "distance_km":118.8,
+    "effort_level_order":0
+  },
+  {
+    "distance_band":"5\u201310 km",
+    "distance_band_order":1,
+    "effort_level":"Moderate",
+    "activities":22,
+    "distance_km":140.8,
+    "effort_level_order":1
+  },
+  {
+    "distance_band":"5\u201310 km",
+    "distance_band_order":1,
+    "effort_level":"Hard",
+    "activities":12,
+    "distance_km":69.6,
+    "effort_level_order":2
+  },
+  {
+    "distance_band":"5\u201310 km",
+    "distance_band_order":1,
+    "effort_level":"Very hard",
+    "activities":3,
+    "distance_km":22.2,
+    "effort_level_order":3
+  },
+  {
+    "distance_band":"10\u201315 km",
+    "distance_band_order":2,
+    "effort_level":"Low",
+    "activities":1,
+    "distance_km":10.3,
+    "effort_level_order":0
+  },
+  {
+    "distance_band":"10\u201315 km",
+    "distance_band_order":2,
+    "effort_level":"Moderate",
+    "activities":9,
+    "distance_km":95.8,
+    "effort_level_order":1
+  },
+  {
+    "distance_band":"10\u201315 km",
+    "distance_band_order":2,
+    "effort_level":"Hard",
+    "activities":2,
+    "distance_km":24.4,
+    "effort_level_order":2
+  },
+  {
+    "distance_band":"10\u201315 km",
+    "distance_band_order":2,
+    "effort_level":"Very hard",
+    "activities":4,
+    "distance_km":51.4,
+    "effort_level_order":3
+  },
+  {
+    "distance_band":"15\u201321.1 km",
+    "distance_band_order":3,
+    "effort_level":"Moderate",
+    "activities":1,
+    "distance_km":15.0,
+    "effort_level_order":1
+  },
+  {
+    "distance_band":"15\u201321.1 km",
+    "distance_band_order":3,
+    "effort_level":"Very hard",
+    "activities":2,
+    "distance_km":36.9,
+    "effort_level_order":3
+  },
+  {
+    "distance_band":"21.1\u201342.2 km",
+    "distance_band_order":4,
+    "effort_level":"Very hard",
+    "activities":1,
+    "distance_km":26.0,
+    "effort_level_order":3
+  },
+  {
+    "distance_band":"Ultra \/ 42.2 km+",
+    "distance_band_order":5,
+    "effort_level":"Very hard",
+    "activities":1,
+    "distance_km":50.2,
+    "effort_level_order":3
+  }
+]

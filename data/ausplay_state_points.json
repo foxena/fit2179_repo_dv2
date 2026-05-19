@@ -1,0 +1,98 @@
+[
+  {
+    "state_abbr": "ACT",
+    "state_name": "Australian Capital Territory",
+    "frequency": "At least three times per week",
+    "rate_pct": 59.2,
+    "lon": 149.1,
+    "lat": -35.3,
+    "label_dx": 28,
+    "label_dy": -4,
+    "label_lon": 152.1,
+    "label_lat": -35.3
+  },
+  {
+    "state_abbr": "NSW",
+    "state_name": "New South Wales",
+    "frequency": "At least three times per week",
+    "rate_pct": 47.9,
+    "lon": 147.0,
+    "lat": -32.8,
+    "label_dx": 16,
+    "label_dy": 4,
+    "label_lon": 149.0,
+    "label_lat": -32.6
+  },
+  {
+    "state_abbr": "NT",
+    "state_name": "Northern Territory",
+    "frequency": "At least three times per week",
+    "rate_pct": 54.4,
+    "lon": 133.5,
+    "lat": -19.0,
+    "label_dx": -18,
+    "label_dy": -4,
+    "label_lon": 131.3,
+    "label_lat": -18.7
+  },
+  {
+    "state_abbr": "QLD",
+    "state_name": "Queensland",
+    "frequency": "At least three times per week",
+    "rate_pct": 49.6,
+    "lon": 145.0,
+    "lat": -20.5,
+    "label_dx": 16,
+    "label_dy": 0,
+    "label_lon": 147.0,
+    "label_lat": -20.1
+  },
+  {
+    "state_abbr": "SA",
+    "state_name": "South Australia",
+    "frequency": "At least three times per week",
+    "rate_pct": 48.6,
+    "lon": 135.0,
+    "lat": -30.0,
+    "label_dx": -20,
+    "label_dy": 5,
+    "label_lon": 132.4,
+    "label_lat": -30.0
+  },
+  {
+    "state_abbr": "TAS",
+    "state_name": "Tasmania",
+    "frequency": "At least three times per week",
+    "rate_pct": 51.3,
+    "lon": 146.5,
+    "lat": -42.0,
+    "label_dx": 12,
+    "label_dy": 12,
+    "label_lon": 148.5,
+    "label_lat": -42.8
+  },
+  {
+    "state_abbr": "VIC",
+    "state_name": "Victoria",
+    "frequency": "At least three times per week",
+    "rate_pct": 51.7,
+    "lon": 144.7,
+    "lat": -37.0,
+    "label_dx": 12,
+    "label_dy": 14,
+    "label_lon": 146.3,
+    "label_lat": -37.7
+  },
+  {
+    "state_abbr": "WA",
+    "state_name": "Western Australia",
+    "frequency": "At least three times per week",
+    "rate_pct": 52.5,
+    "lon": 121.5,
+    "lat": -25.0,
+    "label_dx": -18,
+    "label_dy": 0,
+    "label_lon": 118.7,
+    "label_lat": -24.7
+  }
+]

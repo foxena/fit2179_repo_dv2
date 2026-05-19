@@ -1,0 +1,2 @@
+runner,date,distance_km,duration_min,finish_time_hours,average_speed_kmh,pace_min_km,speed_band_kmh,finish_time_band,approx_speed_percentile,comparison_note
+This 50 km training run,2026-03-07,50.15,441.8,7.36,6.81,8.81,6–7,7–8h,45.2,"Approximate percentile calculated from grouped public 50 km speed bands, not individual race records."

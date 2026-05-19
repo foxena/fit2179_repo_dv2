@@ -1,0 +1,104 @@
+{
+  "title": {
+    "text": "Running is most common before mid-life",
+    "subtitle": "Adult running/jogging participation by age group, AusPlay 2025"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {
+    "url": "data/ausplay_running_demographics.json"
+  },
+  "transform": [
+    {
+      "filter": "datum.measure === 'Any running/jogging'"
+    },
+    {
+      "filter": "indexof(['15\u201317','18\u201324','25\u201334','35\u201344','45\u201354','55\u201364','65+'], datum.group) >= 0"
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "group",
+      "type": "ordinal",
+      "title": "Age group",
+      "sort": [
+        "15\u201317",
+        "18\u201324",
+        "25\u201334",
+        "35\u201344",
+        "45\u201354",
+        "55\u201364",
+        "65+"
+      ]
+    },
+    "y": {
+      "field": "participation_rate",
+      "type": "quantitative",
+      "title": "Participation rate (%)"
+    },
+    "color": {
+      "value": "#d97706"
+    },
+    "tooltip": [
+      {
+        "field": "group",
+        "title": "Age group"
+      },
+      {
+        "field": "participation_rate",
+        "title": "Participation rate (%)",
+        "format": ".1f"
+      },
+      {
+        "field": "estimated_people",
+        "title": "Estimated people",
+        "format": ",.0f"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fffaf0",
+    "font": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "title": {
+      "fontSize": 17,
+      "anchor": "start",
+      "fontWeight": 700,
+      "color": "#1f2933",
+      "subtitleColor": "#52616b",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#334e5c",
+      "titleColor": "#334e5c",
+      "gridColor": "#e9dfd0",
+      "domainColor": "#b8aa99",
+      "tickColor": "#b8aa99"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "orient": "bottom",
+      "symbolSize": 120
+    },
+    "view": {
+      "stroke": null
+    },
+    "range": {
+      "category": [
+        "#d97706",
+        "#2563eb",
+        "#0f766e",
+        "#9f1239",
+        "#6d28d9",
+        "#475569"
+      ]
+    }
+  }
+}

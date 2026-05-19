@@ -1,0 +1,122 @@
+[
+  {
+    "measure": "Any running/jogging",
+    "group": "Total adults",
+    "participation_rate": 16.5,
+    "estimated_people": 3740484
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "Total adults",
+    "participation_rate": 4.9,
+    "estimated_people": 1114300
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "Males",
+    "participation_rate": 19.0,
+    "estimated_people": 2104784
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "Males",
+    "participation_rate": 5.4,
+    "estimated_people": 595107
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "Females",
+    "participation_rate": 14.2,
+    "estimated_people": 1618697
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "Females",
+    "participation_rate": 4.5,
+    "estimated_people": 518160
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "15\u201317",
+    "participation_rate": 26.6,
+    "estimated_people": 268187
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "15\u201317",
+    "participation_rate": 8.6,
+    "estimated_people": 87077
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "18\u201324",
+    "participation_rate": 26.7,
+    "estimated_people": 660527
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "18\u201324",
+    "participation_rate": 7.4,
+    "estimated_people": 183102
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "25\u201334",
+    "participation_rate": 27.7,
+    "estimated_people": 1125805
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "25\u201334",
+    "participation_rate": 8.4,
+    "estimated_people": 341135
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "35\u201344",
+    "participation_rate": 20.9,
+    "estimated_people": 809696
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "35\u201344",
+    "participation_rate": 6.1,
+    "estimated_people": 237817
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "45\u201354",
+    "participation_rate": 15.8,
+    "estimated_people": 527176
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "45\u201354",
+    "participation_rate": 4.8,
+    "estimated_people": 159277
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "55\u201364",
+    "participation_rate": 8.5,
+    "estimated_people": 261588
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "55\u201364",
+    "participation_rate": 2.5,
+    "estimated_people": 77986
+  },
+  {
+    "measure": "Any running/jogging",
+    "group": "65+",
+    "participation_rate": 1.8,
+    "estimated_people": 87506
+  },
+  {
+    "measure": "Organised running/jogging",
+    "group": "65+",
+    "participation_rate": 0.6,
+    "estimated_people": 27906
+  }
+]

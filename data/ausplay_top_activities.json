@@ -1,0 +1,62 @@
+[
+  {
+    "activity": "Walking (Recreational)",
+    "participation_rate": 50.2,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Fitness/Gym",
+    "participation_rate": 34.1,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Bush walking",
+    "participation_rate": 17.5,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Running/jogging",
+    "participation_rate": 16.5,
+    "highlight": "Running/jogging"
+  },
+  {
+    "activity": "Swimming",
+    "participation_rate": 15.4,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Cycling",
+    "participation_rate": 8.3,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Pilates",
+    "participation_rate": 7.2,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Football/soccer",
+    "participation_rate": 5.6,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Yoga",
+    "participation_rate": 5.1,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Tennis",
+    "participation_rate": 4.9,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Golf",
+    "participation_rate": 4.6,
+    "highlight": "Other activity"
+  },
+  {
+    "activity": "Basketball",
+    "participation_rate": 4.5,
+    "highlight": "Other activity"
+  }
+]

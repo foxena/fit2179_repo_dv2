@@ -1,0 +1,18 @@
+{
+  "activity_count": 99,
+  "raw_running_sessions": 114,
+  "raw_session_count": 196,
+  "filter_note": "Running sessions of at least 20 minutes; short warm-up/test segments excluded.",
+  "total_distance_km": 742.8,
+  "total_duration_hr": 85.2,
+  "total_elevation_gain_m": 5419,
+  "first_activity": "2025-01-29",
+  "last_activity": "2026-05-16",
+  "median_distance_km": 6.0,
+  "median_pace_min_km": 6.54,
+  "average_hr": 166.0,
+  "activity_types": "Running",
+  "longest_run_km": 50.15,
+  "longest_run_date": "2026-03-07",
+  "ultra_count": 1
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Running Beyond Marathon Distance | FIT2179 DV2</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">FIT2179 Data Visualisation 2 · Vega-Lite</div>
+      <h1>What it takes to run beyond marathon distance</h1>
+      <p class="lede">A 50 km run is easy to treat as a single standout effort. This story asks a more useful question: what does the build-up look like, and how does one recreational runner’s 50 km effort compare with Australian ultra-marathon results?</p>
+      <p class="note"><strong>Privacy note:</strong> the personal training export has been reduced to activity summaries only. Raw GPS routes are not included, so home locations and regular starting points are not exposed.</p>
+      <div class="badge-row">
+        <span class="badge">17 Vega-Lite visualisations</span>
+        <span class="badge">Includes required map</span>
+        <span class="badge">Public running-event comparison</span>
+        <span class="badge">Human-readable JSON specs</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="section-title">
+        <h2>The question: when does a run become something bigger?</h2>
+        <p>The personal training log contains 99 runs of at least 20 minutes. Most runs were ordinary training sessions, but one reached 50.15 km. The first view sets the scale before the story moves into public Australian running data.</p>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi"><strong id="kpiActivities">—</strong><span>Runs analysed</span></div>
+        <div class="kpi"><strong id="kpiDistance">—</strong><span>Total distance</span></div>
+        <div class="kpi"><strong id="kpiHours">—</strong><span>Total moving time</span></div>
+        <div class="kpi"><strong id="kpiElevation">—</strong><span>Elevation gain</span></div>
+      </div>
+      <p class="caption">Training window: <strong id="kpiRange">—</strong>. Typical activity: <strong id="kpiMedian">—</strong>. Activity type: <strong id="kpiTypes">—</strong>. Longest run: <strong id="kpiUltra">—</strong>.</p>
+      <div class="wide-card story-card">
+        <div id="vis-distance-ladder" class="chart"></div>
+        <p class="caption">The distance ladder turns a 50.15 km training run into a familiar scale: beyond marathon distance, just past the 50 km benchmark, and still well below 100 km and 100 mile ultra categories.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Running is popular, but much of it happens outside formal events</h2>
+        <p>AusPlay provides the public participation backdrop. It shows why event results can never describe the whole running population: many people run independently, while organised races and clubs capture only part of the story.</p>
+      </div>
+      <div class="chart-grid">
+        <div class="wide-card">
+          <div id="vis-map" class="chart"></div>
+          <p class="caption">The required map uses ABS state/territory boundaries as a stroke-only outline and AusPlay state/territory activity-frequency values as bubbles. It provides a broad Australian activity context without exposing personal GPS data.</p>
+        </div>
+        <div class="chart-card"><div id="vis-top" class="chart"></div><p class="caption">A ranked bar chart places running/jogging among common adult activities, showing why running is familiar even to non-race participants.</p></div>
+        <div class="chart-card"><div id="vis-age" class="chart"></div><p class="caption">The age profile shows who is most likely to participate in running/jogging, which helps explain why running feels more visible in some life stages than others.</p></div>
+        <div class="chart-card"><div id="vis-gender" class="chart"></div><p class="caption">Comparing any participation with organised participation shows how much running sits outside formal events.</p></div>
+        <div class="chart-card"><div id="vis-entities" class="chart"></div><p class="caption">When running is organised, the organising body varies, reinforcing that there is no single “running system” capturing all activity.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>The public benchmark: Australian ultra-running results</h2>
+        <p>To compare the 50 km effort with actual running data, the Kaggle ultra-marathon dataset was trimmed to Australian ultra events from 2015–2022 and aggregated before publication. The result is a lightweight comparison layer with no athlete names, IDs or individual race records.</p>
+      </div>
+      <div class="chart-grid">
+        <div class="wide-card"><div id="vis-ultra-year" class="chart"></div><p class="caption">Public ultra-marathon results show that 50 km is the most common of the selected Australian ultra categories, while 100 km and 100 mile events remain smaller specialist fields.</p></div>
+        <div class="chart-card"><div id="vis-ultra-summary" class="chart"></div><p class="caption">The bubble plot combines finishers, median finish time and median speed to show how distance changes both scale and difficulty.</p></div>
+        <div class="chart-card"><div id="vis-50-speed" class="chart"></div><p class="caption">The highlighted band shows where the 50.15 km training run sits within grouped Australian 50 km speed results.</p></div>
+        <div class="chart-card"><div id="vis-50-time" class="chart"></div><p class="caption">Finish-time bands translate pace into a more intuitive benchmark for a general audience.</p></div>
+        <div class="chart-card"><div id="vis-50-age" class="chart"></div><p class="caption">Age and gender patterns show why a single “average 50 km runner” is too simple.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>The build-up: consistency matters before the big distance</h2>
+        <p>The training log makes the public story concrete. Volume arrives in waves, training days cluster around routine, and pace changes with distance and elevation. The 50 km run is the endpoint of a pattern, not just an isolated outlier.</p>
+      </div>
+      <div class="chart-grid">
+        <div class="wide-card"><div id="vis-monthly" class="chart"></div><p class="caption">Layering distance and activity count shows whether higher monthly volume came from more outings or longer outings.</p></div>
+        <div class="chart-card"><div id="vis-weekly" class="chart"></div><p class="caption">Weekly totals make consistency and interruptions easier to see than individual activity dots.</p></div>
+        <div class="chart-card"><div id="vis-calendar" class="chart"></div><p class="caption">The calendar heatmap turns routine into a visual pattern of active and quiet days.</p></div>
+        <div class="chart-card"><div id="vis-scatter" class="chart"></div><p class="caption">Distance, pace and elevation are combined to show why one “average pace” can be misleading.</p></div>
+        <div class="chart-card"><div id="vis-hr-hills" class="chart"></div><p class="caption">Heart rate adds physiological context to the terrain story, showing that harder routes are not only about distance.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>A custom view: effort, not just distance</h2>
+        <p>Distance alone rewards long days but misses hard short efforts. The effort matrix uses derived data: a relative score based on average heart rate, speed and elevation gain per kilometre.</p>
+      </div>
+      <div class="wide-card">
+        <div id="vis-effort" class="chart"></div>
+        <p class="caption">This custom-built visualisation combines derived scoring with a bubble matrix rather than relying on a single standard chart.</p>
+      </div>
+      <div class="callout">
+        <div class="text-box">
+          <h3>What this story says</h3>
+          <p>Running looks simple from the outside, but the data shows several scales at once: national participation, public ultra-running benchmarks and one runner’s training rhythm. The 50 km run is not just a long dot on a scatterplot; it marks the point where regular training steps into ultra-distance territory.</p>
+        </div>
+        <div class="text-box">
+          <h3>Design choices</h3>
+          <p>The page uses a scrolling presentation format, concise annotations, varied idioms and a warm running-inspired colour palette. Interactivity is limited to tooltips because the assignment is presentation-focused rather than an expert exploration tool.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="metadata">
+    <div class="hero-inner">
+      <h2>Sources and authorship</h2>
+      <ul>
+        <li>Personal running-watch export, processed into privacy-safe summaries for 99 running activities of 20+ minutes. Raw GPS data is excluded. The watch brand was COROS, but the visualisation treats this as a training-log source rather than a brand story.</li>
+        <li>Kaggle — The Big Dataset of Ultra-Marathon Running, filtered to Australian events, 2015–2022, and aggregated into small public files. No athlete names, IDs or individual records are included.</li>
+        <li>AusPlay By Sport Data Tables, released 30 April 2026: running/jogging participation, age, gender and organising-entity data.</li>
+        <li>AusPlay National Data Tables, released 30 April 2026: state/territory physical activity frequency.</li>
+        <li>ABS ASGS Edition 3 States and Territories 2021 boundary file, simplified to GeoJSON for fast loading.</li>
+      </ul>
+      <p>Author: [Your name]. Date: May 2026. Generative AI acknowledgement: ChatGPT was used to assist with data processing, Vega-Lite specification drafting, HTML/CSS structure and copy editing. Final submission should be reviewed and edited by the student.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

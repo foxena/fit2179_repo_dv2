@@ -1,0 +1,37 @@
+[
+  {
+    "entity": "Total organised",
+    "participation_rate": 4.92,
+    "estimated_people": 1114300
+  },
+  {
+    "entity": "Sports club/association",
+    "participation_rate": 0.7,
+    "estimated_people": 157429
+  },
+  {
+    "entity": "Fitness/leisure centre",
+    "participation_rate": 0.52,
+    "estimated_people": 118336
+  },
+  {
+    "entity": "Other organisation",
+    "participation_rate": 0.65,
+    "estimated_people": 146370
+  },
+  {
+    "entity": "School/university",
+    "participation_rate": 0.32,
+    "estimated_people": 72938
+  },
+  {
+    "entity": "Workplace",
+    "participation_rate": 0.4,
+    "estimated_people": 90833
+  },
+  {
+    "entity": "Other",
+    "participation_rate": 0.44,
+    "estimated_people": 99333
+  }
+]

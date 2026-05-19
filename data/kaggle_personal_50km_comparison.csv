@@ -1,0 +1,2 @@
+runner,distance_km,finish_time_hours,average_speed_kmh,comparison_group,speed_percentile,note
+This 50 km training run,50.15,,,"Australian 50 km ultra results, Kaggle dataset, 2015–2022",,Add MY_50KM_RUN_TIME at the top of this notebook to calculate this.

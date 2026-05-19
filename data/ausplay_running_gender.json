@@ -1,0 +1,26 @@
+[
+  {
+    "measure": "Any running/jogging",
+    "gender": "Males",
+    "participation_rate": 19.0,
+    "estimated_people": 2104784
+  },
+  {
+    "measure": "Organised running/jogging",
+    "gender": "Males",
+    "participation_rate": 5.4,
+    "estimated_people": 595107
+  },
+  {
+    "measure": "Any running/jogging",
+    "gender": "Females",
+    "participation_rate": 14.2,
+    "estimated_people": 1618697
+  },
+  {
+    "measure": "Organised running/jogging",
+    "gender": "Females",
+    "participation_rate": 4.5,
+    "estimated_people": 518160
+  }
+]

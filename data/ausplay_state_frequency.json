@@ -1,0 +1,50 @@
+[
+  {
+    "state_abbr": "ACT",
+    "state_name": "Australian Capital Territory",
+    "frequency": "At least three times per week",
+    "rate_pct": 59.2
+  },
+  {
+    "state_abbr": "NSW",
+    "state_name": "New South Wales",
+    "frequency": "At least three times per week",
+    "rate_pct": 47.9
+  },
+  {
+    "state_abbr": "NT",
+    "state_name": "Northern Territory",
+    "frequency": "At least three times per week",
+    "rate_pct": 54.4
+  },
+  {
+    "state_abbr": "QLD",
+    "state_name": "Queensland",
+    "frequency": "At least three times per week",
+    "rate_pct": 49.6
+  },
+  {
+    "state_abbr": "SA",
+    "state_name": "South Australia",
+    "frequency": "At least three times per week",
+    "rate_pct": 48.6
+  },
+  {
+    "state_abbr": "TAS",
+    "state_name": "Tasmania",
+    "frequency": "At least three times per week",
+    "rate_pct": 51.3
+  },
+  {
+    "state_abbr": "VIC",
+    "state_name": "Victoria",
+    "frequency": "At least three times per week",
+    "rate_pct": 51.7
+  },
+  {
+    "state_abbr": "WA",
+    "state_name": "Western Australia",
+    "frequency": "At least three times per week",
+    "rate_pct": 52.5
+  }
+]

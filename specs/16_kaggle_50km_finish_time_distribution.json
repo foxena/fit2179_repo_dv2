@@ -1,0 +1,106 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Finish time tells the same story from another angle",
+    "subtitle": "The 50.15 km run took 7.36 hours and falls in the 7–8h public-results band"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {
+    "url": "data/kaggle_aus_50km_finish_time_distribution_augmented.json"
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 4,
+    "cornerRadiusTopRight": 4
+  },
+  "encoding": {
+    "x": {
+      "field": "finish_time_band",
+      "type": "ordinal",
+      "title": "Finish-time band",
+      "sort": {
+        "field": "band_order"
+      }
+    },
+    "y": {
+      "field": "finishers",
+      "type": "quantitative",
+      "title": "Australian 50 km finishers"
+    },
+    "color": {
+      "field": "highlight",
+      "type": "nominal",
+      "title": null,
+      "scale": {
+        "domain": [
+          "This training run’s band",
+          "Other Australian 50 km results"
+        ],
+        "range": [
+          "#9f1239",
+          "#0f766e"
+        ]
+      }
+    },
+    "tooltip": [
+      {
+        "field": "finish_time_band",
+        "type": "ordinal",
+        "title": "Finish-time band"
+      },
+      {
+        "field": "finishers",
+        "type": "quantitative",
+        "title": "Finishers",
+        "format": ","
+      },
+      {
+        "field": "highlight",
+        "type": "nominal",
+        "title": "Group"
+      }
+    ]
+  },
+  "config": {
+    "background": "#fffaf0",
+    "font": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "title": {
+      "fontSize": 17,
+      "anchor": "start",
+      "fontWeight": 700,
+      "color": "#1f2933",
+      "subtitleColor": "#52616b",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#334e5c",
+      "titleColor": "#334e5c",
+      "gridColor": "#e9dfd0",
+      "domainColor": "#b8aa99",
+      "tickColor": "#b8aa99"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "orient": "bottom",
+      "symbolSize": 120
+    },
+    "view": {
+      "stroke": null
+    },
+    "range": {
+      "category": [
+        "#d97706",
+        "#2563eb",
+        "#0f766e",
+        "#9f1239",
+        "#6d28d9",
+        "#475569",
+        "#0891b2"
+      ]
+    }
+  }
+}

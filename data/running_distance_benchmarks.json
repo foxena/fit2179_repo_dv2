@@ -1,0 +1,58 @@
+[
+  {
+    "distance_label": "5 km",
+    "distance_km": 5.0,
+    "display_value": "5.0 km",
+    "type": "Common race distance",
+    "order": 1
+  },
+  {
+    "distance_label": "10 km",
+    "distance_km": 10.0,
+    "display_value": "10.0 km",
+    "type": "Common race distance",
+    "order": 2
+  },
+  {
+    "distance_label": "Half marathon",
+    "distance_km": 21.1,
+    "display_value": "21.1 km",
+    "type": "Common race distance",
+    "order": 3
+  },
+  {
+    "distance_label": "Marathon",
+    "distance_km": 42.2,
+    "display_value": "42.2 km",
+    "type": "Common race distance",
+    "order": 4
+  },
+  {
+    "distance_label": "50 km ultra",
+    "distance_km": 50.0,
+    "display_value": "50.0 km",
+    "type": "Ultra benchmark",
+    "order": 5
+  },
+  {
+    "distance_label": "Longest training run",
+    "distance_km": 50.15,
+    "display_value": "50.15 km",
+    "type": "Training log",
+    "order": 6
+  },
+  {
+    "distance_label": "100 km ultra",
+    "distance_km": 100.0,
+    "display_value": "100.0 km",
+    "type": "Ultra benchmark",
+    "order": 7
+  },
+  {
+    "distance_label": "100 mile ultra",
+    "distance_km": 160.9,
+    "display_value": "160.9 km",
+    "type": "Ultra benchmark",
+    "order": 8
+  }
+]

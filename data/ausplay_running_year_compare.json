@@ -1,0 +1,26 @@
+[
+  {
+    "measure": "Any running/jogging",
+    "year": 2024,
+    "participation_rate": 16.0,
+    "estimated_people": 3548775
+  },
+  {
+    "measure": "Any running/jogging",
+    "year": 2025,
+    "participation_rate": 16.5,
+    "estimated_people": 3740484
+  },
+  {
+    "measure": "Organised running/jogging (children)",
+    "year": 2024,
+    "participation_rate": 3.3,
+    "estimated_people": 158592
+  },
+  {
+    "measure": "Organised running/jogging (children)",
+    "year": 2025,
+    "participation_rate": 3.1,
+    "estimated_people": 150454
+  }
+]

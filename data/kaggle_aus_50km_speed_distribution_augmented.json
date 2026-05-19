@@ -1,0 +1,65 @@
+[
+  {
+    "speed_band_kmh": "<5",
+    "finishers": 3403,
+    "band_order": 1,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "5–6",
+    "finishers": 6442,
+    "band_order": 2,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "6–7",
+    "finishers": 7781,
+    "band_order": 3,
+    "contains_my_run": true,
+    "highlight": "This training run’s band"
+  },
+  {
+    "speed_band_kmh": "7–8",
+    "finishers": 6667,
+    "band_order": 4,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "8–9",
+    "finishers": 4806,
+    "band_order": 5,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "9–10",
+    "finishers": 3014,
+    "band_order": 6,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "10–11",
+    "finishers": 1874,
+    "band_order": 7,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "11–12",
+    "finishers": 924,
+    "band_order": 8,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  },
+  {
+    "speed_band_kmh": "12+",
+    "finishers": 802,
+    "band_order": 9,
+    "contains_my_run": false,
+    "highlight": "Other Australian 50 km results"
+  }
+]

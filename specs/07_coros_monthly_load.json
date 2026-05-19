@@ -1,0 +1,132 @@
+{
+  "title": {
+    "text": "Training volume rises and falls across the year",
+    "subtitle": "Monthly running distance and run count from the personal training log"
+  },
+  "width": "container",
+  "height": 350,
+  "data": {
+    "url": "data/coros_monthly.json"
+  },
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadiusEnd": 3,
+        "opacity": 0.82
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal",
+          "title": null,
+          "axis": {
+            "labelAngle": -35
+          }
+        },
+        "y": {
+          "field": "total_distance_km",
+          "type": "quantitative",
+          "title": "Distance (km)"
+        },
+        "color": {
+          "value": "#d97706"
+        },
+        "tooltip": [
+          {
+            "field": "month"
+          },
+          {
+            "field": "total_distance_km",
+            "title": "Distance (km)",
+            "format": ".1f"
+          },
+          {
+            "field": "activities",
+            "title": "Activities"
+          },
+          {
+            "field": "total_duration_hr",
+            "title": "Hours",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "point": true,
+        "strokeWidth": 2.5
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "activities",
+          "type": "quantitative",
+          "title": "Activity count"
+        },
+        "color": {
+          "value": "#2563eb"
+        },
+        "tooltip": [
+          {
+            "field": "month"
+          },
+          {
+            "field": "activities"
+          }
+        ]
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "background": "#fffaf0",
+    "font": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "title": {
+      "fontSize": 17,
+      "anchor": "start",
+      "fontWeight": 700,
+      "color": "#1f2933",
+      "subtitleColor": "#52616b",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#334e5c",
+      "titleColor": "#334e5c",
+      "gridColor": "#e9dfd0",
+      "domainColor": "#b8aa99",
+      "tickColor": "#b8aa99"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "orient": "bottom",
+      "symbolSize": 120
+    },
+    "view": {
+      "stroke": null
+    },
+    "range": {
+      "category": [
+        "#d97706",
+        "#2563eb",
+        "#0f766e",
+        "#9f1239",
+        "#6d28d9",
+        "#475569"
+      ]
+    }
+  }
+}

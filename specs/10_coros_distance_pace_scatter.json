@@ -1,0 +1,172 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Longer and hillier runs change what pace means",
+    "subtitle": "Each dot is a run; colour marks ultra-distance status and size shows elevation gain"
+  },
+  "width": "container",
+  "height": 360,
+  "layer": [
+    {
+      "data": {
+        "url": "data/coros_activities.json"
+      },
+      "transform": [
+        {
+          "filter": "datum.activity_group !== 'Other training' && datum.distance_km > 0"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.72,
+        "stroke": "#ffffff",
+        "strokeWidth": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "distance_km",
+          "type": "quantitative",
+          "title": "Distance (km)"
+        },
+        "y": {
+          "field": "pace_min_km",
+          "type": "quantitative",
+          "title": "Pace (min/km)",
+          "scale": {
+            "zero": false
+          }
+        },
+        "size": {
+          "field": "elevation_gain_m",
+          "type": "quantitative",
+          "title": "Elevation gain (m)",
+          "scale": {
+            "range": [
+              35,
+              650
+            ]
+          }
+        },
+        "color": {
+          "field": "distance_band",
+          "type": "nominal",
+          "title": "Distance band",
+          "sort": [
+            "<5 km",
+            "5–10 km",
+            "10–15 km",
+            "15–21.1 km",
+            "Half marathon+",
+            "Ultra / 42.2 km+"
+          ]
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "title": "Date"
+          },
+          {
+            "field": "distance_km",
+            "type": "quantitative",
+            "title": "Distance (km)",
+            "format": ".1f"
+          },
+          {
+            "field": "pace_min_km",
+            "type": "quantitative",
+            "title": "Pace (min/km)",
+            "format": ".2f"
+          },
+          {
+            "field": "elevation_gain_m",
+            "type": "quantitative",
+            "title": "Elevation gain (m)"
+          },
+          {
+            "field": "avg_hr",
+            "type": "quantitative",
+            "title": "Average HR"
+          },
+          {
+            "field": "activity_type",
+            "type": "nominal",
+            "title": "Run type"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/coros_activities.json"
+      },
+      "transform": [
+        {
+          "filter": "datum.is_ultra == true"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": 8,
+        "fontWeight": 700,
+        "fontSize": 12,
+        "color": "#9f1239"
+      },
+      "encoding": {
+        "x": {
+          "field": "distance_km",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "pace_min_km",
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "50 km ultra"
+        }
+      }
+    }
+  ],
+  "config": {
+    "background": "#fffaf0",
+    "font": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "title": {
+      "fontSize": 17,
+      "anchor": "start",
+      "fontWeight": 700,
+      "color": "#1f2933",
+      "subtitleColor": "#52616b",
+      "subtitleFontSize": 12
+    },
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "labelColor": "#334e5c",
+      "titleColor": "#334e5c",
+      "gridColor": "#e9dfd0",
+      "domainColor": "#b8aa99",
+      "tickColor": "#b8aa99"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "orient": "bottom",
+      "symbolSize": 120
+    },
+    "view": {
+      "stroke": null
+    },
+    "range": {
+      "category": [
+        "#d97706",
+        "#2563eb",
+        "#0f766e",
+        "#9f1239",
+        "#6d28d9",
+        "#475569"
+      ]
+    }
+  }
+}
