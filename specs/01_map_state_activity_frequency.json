@@ -4,19 +4,10 @@
     "text": "Where regular activity is strongest",
     "subtitle": "Adults active at least three times per week, 2025, by state/territory"
   },
-  "width": 660,
+  "width": "container",
   "height": 430,
   "projection": {
-    "type": "mercator",
-    "center": [
-      134.5,
-      -27.5
-    ],
-    "scale": 540,
-    "translate": [
-      330,
-      220
-    ]
+    "type": "mercator"
   },
   "layer": [
     {
