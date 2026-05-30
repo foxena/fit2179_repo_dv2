@@ -36,19 +36,24 @@
       "field": "distance_band",
       "type": "nominal",
       "title": "Distance band",
+      "legend": {
+        "columns": 3,
+        "labelLimit": 95
+      },
       "sort": [
         "<5 km",
         "5–10 km",
         "10–15 km",
         "15–21.1 km",
-        "Half marathon+",
+        "21.1–42.2 km",
         "Ultra / 42.2 km+"
       ]
     },
     "shape": {
       "field": "distance_band",
       "type": "nominal",
-      "title": "Distance band"
+      "title": "Distance band",
+      "legend": null
     },
     "tooltip": [
       {
@@ -106,7 +111,10 @@
       "labelFontSize": 11,
       "titleFontSize": 12,
       "orient": "bottom",
-      "symbolSize": 120
+      "symbolSize": 120,
+      "columns": 3,
+      "labelLimit": 95,
+      "titleLimit": 140
     },
     "view": {
       "stroke": null

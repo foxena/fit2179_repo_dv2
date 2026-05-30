@@ -92,7 +92,11 @@ section { margin: 42px 0 56px; }
   min-width: 0;
 }
 .wide-card { grid-column: 1 / -1; }
-.chart { width: 100%; overflow: hidden; }
+.chart { width: 100%; overflow: visible; }
+#vis-map {
+  display: flex;
+  justify-content: center;
+}
 .caption {
   margin: 12px 2px 4px;
   color: var(--muted);

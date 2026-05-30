@@ -9,7 +9,7 @@ Recommended five sections:
    - Intro paragraph
    - Privacy note
    - Four KPI boxes: runs, distance, hours, elevation
-   - Distance ladder showing 5 km, 10 km, half marathon, marathon, 50 km, the 50.15 km training run, 100 km and 100 mile
+   - Distance ladder showing 5 km, 10 km, half marathon, marathon, 50 km, the 50.15 km training run, 100 km and 161 km
 
 2. Australian participation context
    - Large state/territory map

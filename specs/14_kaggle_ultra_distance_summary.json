@@ -38,21 +38,34 @@
       "title": "Median speed (km/h)",
       "scale": {
         "range": [
-          200,
-          1800
+          180,
+          950
         ]
+      },
+      "legend": {
+        "title": "Speed (km/h)",
+        "values": [
+          5.8,
+          6.3,
+          7.0
+        ],
+        "format": ".1f",
+        "columns": 3,
+        "symbolSize": 70,
+        "labelLimit": 42,
+        "titleLimit": 110
       }
     },
     "color": {
       "field": "distance_group",
       "type": "nominal",
       "title": "Distance",
-      "sort": [
-        "50 km",
-        "100 km",
-        "100 mile"
-      ]
-    },
+            "sort": [
+                "50 km",
+                "100 km",
+                "161 km"
+            ]
+        },
     "tooltip": [
       {
         "field": "distance_group",
@@ -103,7 +116,10 @@
       "labelFontSize": 11,
       "titleFontSize": 12,
       "orient": "bottom",
-      "symbolSize": 120
+      "symbolSize": 120,
+      "columns": 3,
+      "labelLimit": 120,
+      "titleLimit": 140
     },
     "view": {
       "stroke": null

@@ -49,9 +49,9 @@
     "order": 7
   },
   {
-    "distance_label": "100 mile ultra",
+    "distance_label": "161 km ultra",
     "distance_km": 160.9,
-    "display_value": "160.9 km",
+    "display_value": "161 km",
     "type": "Ultra benchmark",
     "order": 8
   }

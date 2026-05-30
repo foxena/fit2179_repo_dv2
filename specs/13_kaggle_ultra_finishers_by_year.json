@@ -32,11 +32,11 @@
       "field": "distance_group",
       "type": "nominal",
       "title": "Distance",
-      "sort": [
-        "50 km",
-        "100 km",
-        "100 mile"
-      ]
+        "sort": [
+          "50 km",
+          "100 km",
+          "161 km"
+        ]
     },
     "tooltip": [
       {

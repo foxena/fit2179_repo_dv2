@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "The 50 km effort sits near the middle of Australian 50 km speeds",
-    "subtitle": "Training-run speed: 6.81 km/h, approximately the 45th speed percentile from grouped public bands"
+    "text": "The 50 km effort sits near the middle",
+    "subtitle": "Training speed: 6.81 km/h; about the 45th percentile from grouped 50 km bands"
   },
   "width": "container",
   "height": 320,
@@ -122,7 +122,10 @@
       "labelFontSize": 11,
       "titleFontSize": 12,
       "orient": "bottom",
-      "symbolSize": 120
+      "symbolSize": 120,
+      "columns": 2,
+      "labelLimit": 180,
+      "titleLimit": 160
     },
     "view": {
       "stroke": null
