@@ -97,6 +97,15 @@ section { margin: 42px 0 56px; }
   display: flex;
   justify-content: center;
 }
+#vis-map .vega-embed {
+  width: auto;
+  margin-inline: auto;
+}
+#vis-map canvas,
+#vis-map svg {
+  display: block;
+  margin-inline: auto;
+}
 .caption {
   margin: 12px 2px 4px;
   color: var(--muted);
